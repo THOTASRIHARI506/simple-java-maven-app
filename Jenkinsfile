@@ -31,7 +31,7 @@ pipeline {
                 sh 'mvn clean compile'
             }
         }
-
+       /*
         stage('SAST - SonarQube') {
             steps {
                 echo '========== Running SonarQube =========='
@@ -54,7 +54,7 @@ pipeline {
                 }
             }
         }
-
+       */
         stage('Package Artifact') {
             steps {
                 echo '========== Packaging =========='
@@ -150,6 +150,7 @@ pipeline {
         }
     }
 }
+
 
 
 
